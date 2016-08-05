@@ -47,7 +47,7 @@ public class RestaurantListAdapter extends ArrayAdapter<Restaurant> {
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-        Picasso.with(getContext()).load(restaurant.image).placeholder(R.drawable.ghost).resize(300,300).into(viewHolder.ivImage);
+        Picasso.with(getContext()).load(restaurant.image).placeholder(R.drawable.ghost).resize(200,200).into(viewHolder.ivImage);
         viewHolder.tvName.setText(restaurant.name);
         Picasso.with(getContext()).load(restaurant.ratingImg).resize(250,50).into(viewHolder.ivRating);
         viewHolder.tvReviews.setText(String.format("%d reviews", restaurant.reviewCount));

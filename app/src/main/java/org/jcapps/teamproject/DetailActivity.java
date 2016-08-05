@@ -46,7 +46,7 @@ public class DetailActivity extends AppCompatActivity {
 
         Picasso.with(this).load(restaurant.image).placeholder(R.drawable.ghost).resize(300,300).into(mImage);
         Picasso.with(this).load(restaurant.ratingImg).placeholder(R.drawable.ghost).resize(250, 50).into(mRatingImg);
-        Picasso.with(this).load(restaurant.snippetImg).placeholder(R.drawable.ghost).resize(250, 250).into(mSnippetImg);
+        Picasso.with(this).load(restaurant.snippetImg).placeholder(R.drawable.ghost).resize(280, 280).into(mSnippetImg);
 
     }
 }
